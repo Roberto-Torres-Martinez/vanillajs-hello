@@ -13,7 +13,7 @@ window.onload = function() {
     " borró todo lo que tenía guardado,",
     " se retrasó por un atasco,",
     " dejó de funcionar,",
-    " se acostó sobre el teclado",
+    " se acostó sobre el teclado,",
     " se volcó y llenó de tierra mi escritorio,",
     " empezó a echar humo de repente,"
   ];
@@ -36,11 +36,11 @@ window.onload = function() {
     " en el momento clave del trabajo."
   ];
 
-  let rdm1 = Math.floor(Math.random() * sustantivos.length);
-  let rdm2 = Math.floor(Math.random() * acciones.length);
-  let rdm3 = Math.floor(Math.random() * evitar.length);
-  let rdm4 = Math.floor(Math.random() * cuándo.length);
+  let parte1 = Math.floor(Math.random() * sustantivos.length);
+  let parte2 = Math.floor(Math.random() * acciones.length);
+  let parte3 = Math.floor(Math.random() * evitar.length);
+  let parte4 = Math.floor(Math.random() * cuándo.length);
 
   document.querySelector("#excusas").innerHTML =
-    sustantivos[rdm1] + acciones[rdm2] + evitar[rdm3] + cuándo[rdm4];
+    sustantivos[parte1] + acciones[parte2] + evitar[parte3] + cuándo[parte4];
 };
